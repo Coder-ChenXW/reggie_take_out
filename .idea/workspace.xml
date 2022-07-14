@@ -4,7 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c6428828-6eb5-4446-bc75-098bdc68f0e5" name="Changes" comment="初建项目-regge外卖" />
+    <list default="true" id="c6428828-6eb5-4446-bc75-098bdc68f0e5" name="Changes" comment="进行了缓存处理，主要针对菜品套餐的缓存">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cxw/reggie/config/RedisConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cxw/reggie/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cxw/reggie/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cxw/reggie/common/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cxw/reggie/common/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cxw/reggie/config/WebMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cxw/reggie/config/WebMvcConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cxw/reggie/controller/DishController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cxw/reggie/controller/DishController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cxw/reggie/controller/SetmealController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cxw/reggie/controller/SetmealController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cxw/reggie/controller/ShoppingCartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cxw/reggie/controller/ShoppingCartController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cxw/reggie/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cxw/reggie/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -59,19 +73,22 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../java-review/stage2/cache_demo" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.DirectoryMappings" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\project\java\springboot\reggie_take_out\src\main\java\com\cxw\reggie\config" />
       <recent name="E:\project\java\springboot\reggie_take_out\src\main\java\com\cxw\reggie\controller" />
       <recent name="E:\project\java\springboot\reggie_take_out\src\main\java\com\cxw\reggie\service\impl" />
       <recent name="E:\project\java\springboot\reggie_take_out\src\main\java\com\cxw\reggie\service" />
       <recent name="E:\project\java\springboot\reggie_take_out\src\main\java\com\cxw\reggie\mapper" />
-      <recent name="E:\project\java\springboot\reggie_take_out\src\main\java\com\cxw\reggie\entity" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -81,7 +98,20 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UploadFileTest.test1">
+  <component name="RunManager" selected="Application.Application">
+    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.cxw.reggie.Application" />
+      <module name="reggie_take_out" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cxw.reggie.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UploadFileTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reggie_take_out" />
       <extension name="coverage">
@@ -113,6 +143,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.Application" />
+        <item itemvalue="Application.Application" />
         <item itemvalue="JUnit.UploadFileTest.test1" />
       </list>
     </recent_temporary>
@@ -129,7 +161,11 @@
       <workItem from="1657612805825" duration="20961000" />
       <workItem from="1657673568269" duration="10327000" />
       <workItem from="1657687216173" duration="9613000" />
-      <workItem from="1657701295945" duration="1281000" />
+      <workItem from="1657701295945" duration="1892000" />
+      <workItem from="1657703222634" duration="2714000" />
+      <workItem from="1657716502751" duration="1787000" />
+      <workItem from="1657762861225" duration="7859000" />
+      <workItem from="1657789433235" duration="840000" />
     </task>
     <task id="LOCAL-00001" summary="初建项目-外卖">
       <created>1657701375957</created>
@@ -175,7 +211,8 @@
     </ignored-roots>
     <MESSAGE value="初建项目-外卖" />
     <MESSAGE value="初建项目-regge外卖" />
-    <option name="LAST_COMMIT_MESSAGE" value="初建项目-regge外卖" />
+    <MESSAGE value="进行了缓存处理，主要针对菜品套餐的缓存" />
+    <option name="LAST_COMMIT_MESSAGE" value="进行了缓存处理，主要针对菜品套餐的缓存" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
